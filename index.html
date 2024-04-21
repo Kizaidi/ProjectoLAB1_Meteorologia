@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Previsão do Tempo</title>
+    <link rel="stylesheet" href="./frontend/css/styles.css">
+</head>
+<body>
+    <div class="cabecalho">
+        <h1>Previsão do Tempo</h1>
+        <div>
+            <input type="text" name="" id="input" placeholder="Digite o nome da cidade">
+            <button id="search" onclick="buscarPorCidade()">Procurar</button>
+        </div>
+    </div>
+
+    <main>        
+        <div class="clima">
+            <h2 id="cidade">Luanda, AO</h2>
+            <div class="caixa-temp">
+                <img src="./frontend/img/weathericon.png" alt="" id="img">
+                <p id="temperatura">26 °C</p>
+            </div>
+            <span id="nuvens">Nuvens quebradas</span>
+        </div>
+        <div class="divisor1"></div>
+
+        <div class="previsaoH">
+            <p class="cabecalho-prev">Próxima previsão</p>
+            <div class="templist">
+
+                <div class="proximas">
+                    <div>
+                        <p class="hora">20:30</p>
+                        <p>29 °C / 29 °C</p>
+                    </div>
+                    <p class="desc">Chuva leve</p>
+                </div>
+
+                <div class="proximas">
+                    <div>
+                        <p class="hora">20:30</p>
+                        <p>29 °C / 29 °C</p>
+                    </div>
+                    <p class="desc">Chuva leve</p>
+                </div>
+
+                <div class="proximas">
+                    <div>
+                        <p class="hora">20:30</p>
+                        <p>29 °C / 29 °C</p>
+                    </div>
+                    <p class="desc">Chuva leve</p>
+                </div>
+
+                <div class="proximas">
+                    <div>
+                        <p class="hora">20:30</p>
+                        <p>29 °C / 29 °C</p>
+                    </div>
+                    <p class="desc">Chuva leve</p>
+                </div>
+
+                <div class="proximas">
+                    <div>
+                        <p class="hora">20:30</p>
+                        <p>29 °C / 29 °C</p>
+                    </div>
+                    <p class="desc">Chuva leve</p>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <div class="previsaoD">
+        <div class="divisor2"></div>
+        <p class="cabecalho-prev">Previsão para os próximos 4 dias</p>
+        <div class="semanaF">
+
+            <div class="diaF">
+                <p class="data">Dom, 03 Jul 2022</p>
+                <p>31 °C / 31 °C</p>
+                <p class="desc">Nuvens nubladas</p>
+            </div>
+
+            <div class="diaF">
+                <p class="data">Dom, 03 Jul 2022</p>
+                <p>31 °C / 31 °C</p>
+                <p class="desc">Nuvens nubladas</p>
+            </div>
+
+            <div class="diaF">
+                <p class="data">Dom, 03 Jul 2022</p>
+                <p>31 °C / 31 °C</p>
+                <p class="desc">Nuvens nubladas</p>
+            </div>
+
+            <div class="diaF">
+                <p class="data">Dom, 03 Jul 2022</p>
+                <p>31 °C / 31 °C</p>
+                <p class="desc">Nuvens nubladas</p>
+            </div>
+
+        </div>
+    </div>
+    <script src="./backend/js/backentAPI_Request.js"></script>
+</body>
+</html>
