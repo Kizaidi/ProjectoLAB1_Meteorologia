@@ -150,7 +150,7 @@ main{
     color: rgb(196, 255, 77);
 }
 
-* Media queries para dispositivos de tela média */
+/* Media queries para dispositivos de tela média */
 @media (max-width: 768px) {
     body {
         padding: 1rem;
